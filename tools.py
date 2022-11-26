@@ -191,7 +191,7 @@ param_dict1 = {'knn__n_neighbors': [1, 3, 5, 7, 9, 11]}
 
 def knn_tune(pipeline2, parameters, training_variables, training_target, testing_variables, testing_target):
     """
-    Elle nous permet de determiner le meilleur k params grace a l'evaluation de la precision (Accuracy)
+    Elle nous permet de determiner le meilleur k grace a l'evaluation de la precision (Accuracy)
     :param pipeline2 is our pipeline
     :param parameters is the hyperparameter that we want to tune
     :param training_variables are the predictors training set
