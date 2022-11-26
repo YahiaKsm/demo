@@ -15,7 +15,14 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 # Importer le dataset
-loan = pd.read_csv('LoanData.csv', low_memory=False)
+
+
+def importation(database):
+    return pd.read_csv(database, low_memory=False)
+
+
+loan = importation('LoanData.csv')
+
 
 loan = loan[["NewCreditCustomer", "VerificationType", "Age", "Gender", "Country", "Amount", "Interest", "LoanDuration",
              "MonthlyPayment", "UseOfLoan", "Education", "MaritalStatus", "NrOfDependants", "EmploymentStatus",
